@@ -1,0 +1,10 @@
+ccflags-y += -Idrivers/media/platform/msm/camera_v2
+ccflags-y += -Idrivers/media/platform/msm/camera_v2/sensor/io
+ccflags-y += -Idrivers/media/platform/msm/camera_v2/sensor/cci #yuxin
+obj-$(CONFIG_MSMB_CAMERA) += msm_led_flash.o
+obj-$(CONFIG_MSMB_CAMERA) += msm_led_trigger.o
+obj-$(CONFIG_MSMB_CAMERA) += msm_led_i2c_trigger.o
+#obj-$(CONFIG_MSMB_CAMERA) += adp1660.o
+obj-$(CONFIG_MSMB_CAMERA) += msm_led_torch.o
+#obj-$(CONFIG_MSMB_CAMERA) += lm3642.o   #ZTEBSP yuxin add for P826N33 flash 2014.04.16
+obj-$(CONFIG_MSMB_CAMERA) += lm3642_led_trigger.o   #ZTEBSP yuxin add for P826N33 flash 2014.04.18
